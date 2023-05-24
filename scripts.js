@@ -13,7 +13,7 @@ setInterval(function () {
    nextImage();
 }, 5000)
 function nextImage() {
-   count++
+   count++;
    if (count > 3) {
       count = 1;
    }
