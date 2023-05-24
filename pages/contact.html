@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         id="viewport"
+         name="viewport"
+         content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+      <link rel="stylesheet" href="../style.css" />
+      <title>Patrick Portfolio - Contato</title>
+   </head>
+   <body>
+      <nav class="navbar">
+         <a href="#" class="logo">Dev.</a>
+         <ul class="nav-menu">
+            <li class="nav-item">
+               <a href="../index.html" class="nav-link">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+               <a href="./project.html" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-item">
+               <a href="contact.html" class="nav-link">Contato</a>
+            </li>
+         </ul>
+         <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+      </nav>
+      <header class="header">
+         <div class="img-container">
+            <img
+               class="img-profile"
+               src="../assets/me.jpg"
+               alt="foto de perfil" />
+            <h1>Entre em contato!</h1>
+         </div>
+      </header>
+
+      <form
+         class="contact-form"
+         action="https://formsubmit.co/patrickoli99@gmail.com"
+         method="post">
+         <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+         </div>
+         <div>
+            <label for="message">Mensagem</label>
+            <input type="text" id="message" name="message" required />
+         </div>
+         <button type="submit">Enviar</button>
+         <input
+            type="hidden"
+            name="_next"
+            value="https://PatrickAOliveira.github.io/first-portfolio/thanks.html" />
+         <input type="hidden" name="_subject" value="New submission!" />
+      </form>
+
+      <footer>
+         <a
+            href="https://github.com/PatrickAOliveira"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src="../assets/github.svg" alt="github icon" />
+            <p>Github</p>
+         </a>
+         <a
+            href="https://www.linkedin.com/in/patrick-antonio-de-oliveira-6a163b162/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src="../assets/linkedin.svg" alt="linkedin icon" />
+            <p>Linkedin</p>
+         </a>
+      </footer>
+      <script src="../scripts.js"></script>
+   </body>
+</html>

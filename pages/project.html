@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="utf-8" />
+      <meta
+         id="viewport"
+         name="viewport"
+         content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+      <link rel="stylesheet" href="../style.css" />
+      <title>Patrick Portfolio - Projetos</title>
+   </head>
+   <body>
+      <nav class="navbar">
+         <a href="#" class="logo">Dev.</a>
+         <ul class="nav-menu">
+            <li class="nav-item">
+               <a href="../index.html" class="nav-link">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+               <a href="./project.html" class="nav-link">Projetos</a>
+            </li>
+            <li class="nav-item">
+               <a href="contact.html" class="nav-link">Contato</a>
+            </li>
+         </ul>
+         <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
+      </nav>
+      <!--Cabeçalho da Página-->
+      <header class="header">
+         <div class="img-container">
+            <img
+               class="img-profile"
+               src="../assets/me.jpg"
+               alt="foto de perfil" />
+            <h1>Projetos do Curso</h1>
+         </div>
+      </header>
+      <!--Slides para exibição dos Projetos-->
+      <main>
+         <div class="project-section">
+            <div class="slider">
+               <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1" />
+                  <input type="radio" name="radio-btn" id="radio2" />
+                  <input type="radio" name="radio-btn" id="radio3" />
+                  <!--Conteúdo dos Slides-->
+                  <div class="slide first">
+                     <img
+                        src="../assets/IMG-20200324-WA0001.jpg"
+                        alt="Imagem 1"
+                        title="Edição de Imagem em Photoshop" />
+                  </div>
+                  <div class="slide">
+                     <img
+                        src="../assets/IMG-20210503-WA0002.jpg"
+                        alt="Imagem 2"
+                        title="Maquete de Ponte" />
+                  </div>
+                  <div class="slide">
+                     <video autoplay loop muted title="Edição AfterEffects">
+                        <source
+                           src="../assets/VID-20210126-WA0018.mp4"
+                           type="video/mp4" />
+                     </video>
+                  </div>
+                  <!--Navigação Automática dos Slides-->
+                  <div class="nav-auto">
+                     <div class="auto-btn1"></div>
+                     <div class="auto-btn2"></div>
+                     <div class="auto-btn3"></div>
+                  </div>
+               </div>
+               <!--Navigação Manual dos Slides-->
+               <div class="nav-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+               </div>
+            </div>
+         </div>
+      </main>
+      <!--Rodapé da Página-->
+      <footer>
+         <a
+            href="https://github.com/PatrickAOliveira"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src="../assets/github.svg" alt="github icon" />
+            <p>Github</p>
+         </a>
+         <a
+            href="https://www.linkedin.com/in/patrick-antonio-de-oliveira-6a163b162/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src="../assets/linkedin.svg" alt="linkedin icon" />
+            <p>Linkedin</p>
+         </a>
+      </footer>
+      <script src="../scripts.js"></script>
+   </body>
+</html>
