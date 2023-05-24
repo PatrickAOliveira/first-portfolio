@@ -1,8 +1,8 @@
 const hamburguer = document.querySelector(".hamburguer");
 const navMenu = document.querySelector(".nav-menu");
 const header = document.querySelector(".header");
-document.getElementById("radio1").checked = true;
 let count = 1;
+document.getElementById("radio1").checked = true;
 
 hamburguer.addEventListener("click", () => {
    hamburguer.classList.toggle('active');
