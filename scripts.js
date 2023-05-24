@@ -8,7 +8,7 @@ hamburguer.addEventListener("click", () => {
    hamburguer.classList.toggle('active');
    navMenu.classList.toggle('active');
    header.classList.toggle('active');
-})
+});
 setInterval(function () {
    nextImage();
 }, 5000)
