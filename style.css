@@ -9,6 +9,7 @@
    --img-slide-width: 800px;
    --btn-padding: 5px;
    --btn-radius: 10px;
+   --nav-auto-top: 610px;
 }
 * {
    margin: 0;
@@ -103,13 +104,20 @@ button {
    width: 100px;
    height: 30px;
 }
+.contact-form {
+   justify-content: center;
+   text-align: center;
+}
 .contact-form input {
-   width: 100%;
+   width: 80%;
    padding: 8px 0;
    margin: 8px 0;
 }
-.contact-form input[type="text"] {
+.contact-form textarea {
    height: 100px;
+   width: 80%;
+   padding: 8px 0;
+   margin: 8px 0;
 }
 .project-section {
    width: 100%;
@@ -145,14 +153,14 @@ button {
    width: var(--img-slide-width);
    height: var(--img-slide-height);
 }
-.nav-manual {
+.navigation-manual {
    position: absolute;
    width: var(--img-slide-width);
    margin-top: -40px;
    display: flex;
    justify-content: center;
 }
-.nav-auto div:not(:last-child) {
+.navigation-auto div:not(:last-child) {
    margin-right: 40px;
 }
 .manual-btn {
@@ -186,24 +194,27 @@ button {
 #radio3:checked ~ .first {
    margin-left: -50%;
 }
-.nav-auto div {
+.navigation-auto div {
    border: 2px solid var(--img-border-color);
    padding: var(--btn-padding);
    border-radius: var(--btn-radius);
    cursor: pointer;
    transition: 1s;
 }
-.nav-auto {
+.navigation-auto {
    position: absolute;
    width: var(--img-slide-width);
    display: flex;
    justify-content: center;
-   margin-top: 610px;
+   margin-top: var(--nav-auto-top);
 }
 @media (max-width: 768px) {
    :root {
       --img-width: 120px;
       --img-height: 120px;
+      --img-slide-width: 600px;
+      --img-slide-height: 450px;
+      --nav-auto-top: 410px;
    }
    h1 {
       font-size: 25px;
