@@ -96,6 +96,7 @@ footer a {
 }
 footer a:hover {
    color: var(--img-border-color);
+   transition: 0.5s ease;
 }
 button {
    color: black;
@@ -103,6 +104,10 @@ button {
    border: none;
    width: 100px;
    height: 30px;
+   border-radius: 5px;
+}
+button:hover {
+   cursor: pointer;
 }
 .contact-form {
    justify-content: center;
@@ -112,12 +117,14 @@ button {
    width: 80%;
    padding: 8px 0;
    margin: 8px 0;
+   border-radius: 5px;
 }
 .contact-form textarea {
    height: 100px;
    width: 80%;
    padding: 8px 0;
    margin: 8px 0;
+   border-radius: 5px;
 }
 .project-section {
    width: 100%;

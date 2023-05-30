@@ -7,9 +7,27 @@
          name="viewport"
          content="width=device-width, initial-scale=1.0, user-scalable=no" />
       <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+      <meta
+         property="og:url"
+         content="https://patrickaoliveira.github.io/first-portfolio/" />
+      <meta property="og:title" content="Patrick Portfolio" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Meu primeiro website pessoal" />
+      <meta property="og:locale" content="pt-BR" />
       <link rel="stylesheet" href="../style.css" />
       <script type="text/javascript">
+         let count = 1;
          document.getElementById("radio1").checked = true;
+         setInterval(function () {
+            nextImage();
+         }, 5000);
+         function nextImage() {
+            count++;
+            if (count > 3) {
+               count = 1;
+            }
+            document.getElementById("radio" + count).checked = true;
+         }
       </script>
       <title>Patrick Portfolio - Projetos</title>
    </head>
