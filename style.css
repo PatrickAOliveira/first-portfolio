@@ -82,6 +82,9 @@ h1 {
 section {
    margin: 20px;
 }
+section ul {
+   list-style-type: none;
+}
 footer {
    display: flex;
    justify-content: center;
@@ -97,6 +100,10 @@ footer a {
 footer a:hover {
    color: var(--img-border-color);
    transition: 0.5s ease;
+}
+dd img {
+   width: 48px;
+   height: 48px;
 }
 button {
    color: black;
@@ -266,5 +273,12 @@ button:hover {
    .header.active {
       transition: 0.3s;
       margin-top: 180px;
+   }
+}
+@media (max-width: 425px) {
+   :root {
+      --img-slide-width: 385px;
+      --img-slide-height: 400px;
+      --nav-auto-top: 360px;
    }
 }
